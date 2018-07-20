@@ -1,9 +1,0 @@
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\bin\Debug\netcoreapp2.0\VotingCommon.deps.json
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\bin\Debug\netcoreapp2.0\VotingCommon.dll
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\obj\Debug\netcoreapp2.0\VotingCommon.csprojResolveAssemblyReference.cache
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\obj\Debug\netcoreapp2.0\VotingCommon.csproj.CoreCompileInputs.cache
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\obj\Debug\netcoreapp2.0\VotingCommon.AssemblyInfoInputs.cache
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\obj\Debug\netcoreapp2.0\VotingCommon.AssemblyInfo.cs
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\bin\Debug\netcoreapp2.0\VotingCommon.pdb
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\obj\Debug\netcoreapp2.0\VotingCommon.dll
-C:\Learning\Sf-VotingApp-Logging\Voting\VotingCommon\obj\Debug\netcoreapp2.0\VotingCommon.pdb
