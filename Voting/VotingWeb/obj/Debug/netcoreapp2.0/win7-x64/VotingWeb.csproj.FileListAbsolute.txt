@@ -1,0 +1,17 @@
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\hostpolicy.dll
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\hostfxr.dll
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingWeb.exe
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingWeb.deps.json
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingWeb.runtimeconfig.json
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingWeb.runtimeconfig.dev.json
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingWeb.dll
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingWeb.pdb
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.csprojResolveAssemblyReference.cache
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.csproj.CoreCompileInputs.cache
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.AssemblyInfoInputs.cache
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.AssemblyInfo.cs
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.dll
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.pdb
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingCommon.dll
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\bin\Debug\netcoreapp2.0\win7-x64\VotingCommon.pdb
+C:\Learning\Sf-VotingApp-Logging\Voting\VotingWeb\obj\Debug\netcoreapp2.0\win7-x64\VotingWeb.csproj.CopyComplete

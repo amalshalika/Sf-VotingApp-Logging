@@ -34,11 +34,12 @@ namespace VotingWeb
         [HttpGet("")]
         public async Task<IActionResult> Get()
         {
-            logger.Debug("Loading voting view");
+            logger.Debug("Requesting to load vote data");
+
             Uri serviceName = VotingWeb.GetVotingDataServiceName(this.serviceContext);
             Uri proxyAddress = this.GetProxyAddress(serviceName);
 
-            ServicePartitionList partitions = await this.fabricClient.QueryManager.GetPartitionListAsync(serviceName);
+            ServicePartitionList partitions = await fabricClient.QueryManager.GetPartitionListAsync(serviceName);
 
             List<KeyValuePair<string, int>> result = new List<KeyValuePair<string, int>>();
 
@@ -57,7 +58,6 @@ namespace VotingWeb
                     result.AddRange(JsonConvert.DeserializeObject<List<KeyValuePair<string, int>>>(await response.Content.ReadAsStringAsync()));
                 }
             }
-            logger.Debug("Voting view is loaded");
             return this.Json(result);
         }
 
@@ -65,7 +65,7 @@ namespace VotingWeb
         [HttpPut("{name}")]
         public async Task<IActionResult> Put(string name)
         {
-            logger.Information("Creating/Voting category {VotingCatogory}", name);
+            logger.Information("Create or Update Options {VotingCatogory}", name);
             Uri serviceName = VotingWeb.GetVotingDataServiceName(this.serviceContext);
             Uri proxyAddress = this.GetProxyAddress(serviceName);
             long partitionKey = this.GetPartitionKey(name);
@@ -76,7 +76,6 @@ namespace VotingWeb
 
             using (HttpResponseMessage response = await this.httpClient.PutAsync(proxyUrl, putContent))
             {
-                logger.Debug("Response of creating new voting category {ResponseContent}", await response.Content.ReadAsStringAsync());
                 return new ContentResult()
                 {
                     StatusCode = (int)response.StatusCode,
@@ -89,6 +88,7 @@ namespace VotingWeb
         [HttpDelete("{name}")]
         public async Task<IActionResult> Delete(string name)
         {
+            logger.Information("Request to delete vote option {VoteOption}", name);
             Uri serviceName = VotingWeb.GetVotingDataServiceName(this.serviceContext);
             Uri proxyAddress = this.GetProxyAddress(serviceName);
             long partitionKey = this.GetPartitionKey(name);

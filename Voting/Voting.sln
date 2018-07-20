@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Voting", "Voting\Voting.sfproj", "{933DBE40-2405-4F11-97EF-B484DA564135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingWeb", "VotingWeb\VotingWeb.csproj", "{B1C509AE-B9CA-4838-BC02-1FA64DBDB4A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VotingWeb", "VotingWeb\VotingWeb.csproj", "{B1C509AE-B9CA-4838-BC02-1FA64DBDB4A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingData", "VotingData\VotingData.csproj", "{45B9E9AA-AA37-449A-97F6-1D0E034E3793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VotingData", "VotingData\VotingData.csproj", "{45B9E9AA-AA37-449A-97F6-1D0E034E3793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingCommon", "VotingCommon\VotingCommon.csproj", "{6B5BE118-66A3-4371-BE9A-8B874035EF44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{45B9E9AA-AA37-449A-97F6-1D0E034E3793}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45B9E9AA-AA37-449A-97F6-1D0E034E3793}.Release|x64.ActiveCfg = Release|Any CPU
 		{45B9E9AA-AA37-449A-97F6-1D0E034E3793}.Release|x64.Build.0 = Release|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Debug|x64.Build.0 = Debug|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Release|x64.ActiveCfg = Release|Any CPU
+		{6B5BE118-66A3-4371-BE9A-8B874035EF44}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

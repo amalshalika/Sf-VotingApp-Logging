@@ -1,0 +1,1 @@
+C:\Learning\Sf-VotingApp-Logging\Voting\Voting\obj\x64\Debug\Voting.sfproj.CoreCompileInputs.cache

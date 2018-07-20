@@ -16,7 +16,19 @@
        ServiceManifest.xml file. -->
   <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="VotingDataPkg" ServiceManifestVersion="1.0.0" />
-    <ConfigOverrides />
+    <ConfigOverrides>
+      <ConfigOverride Name="Config">
+        <Settings>
+          <Section Name="SerilogConfigSection">
+            <Parameter Name="EsEndPoint" Value="[EsEndPoint]" />
+            <Parameter Name="IndexFormat" Value="[IndexFormat]" />
+            <Parameter Name="EsEndPointUserName" Value="[EsEndPointUserName]" />
+            <Parameter Name="EsEndPointPassword" Value="[EsEndPointPassword]" />
+            <Parameter Name="MinimumLogLevel" Value="[MinimumLogLevel]" />
+          </Section>
+        </Settings>
+      </ConfigOverride>
+    </ConfigOverrides>
   </ServiceManifestImport>
   <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="VotingWebPkg" ServiceManifestVersion="1.0.0" />

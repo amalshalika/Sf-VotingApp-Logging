@@ -1,8 +1,10 @@
 ﻿using Microsoft.ServiceFabric.Services.Runtime;
+using Serilog;
 using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using VotingCommon;
 
 namespace VotingData
 {
@@ -21,7 +23,11 @@ namespace VotingData
                 // an instance of the class is created in this host process.
 
                 ServiceRuntime.RegisterServiceAsync("VotingDataType",
-                    context => new VotingData(context)).GetAwaiter().GetResult();
+                    context =>
+                    {
+                        LoggingManager.CreateLogger(context);
+                        return new VotingData(context, Log.Logger);
+                    }).GetAwaiter().GetResult();
 
                 ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(VotingData).Name);
 

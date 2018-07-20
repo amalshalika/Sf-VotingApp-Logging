@@ -4,6 +4,7 @@ using Microsoft.ServiceFabric.Data;
 using Microsoft.ServiceFabric.Services.Communication.AspNetCore;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
+using Serilog;
 using System.Collections.Generic;
 using System.Fabric;
 using System.IO;
@@ -15,9 +16,13 @@ namespace VotingData
     /// </summary>
     internal sealed class VotingData : StatefulService
     {
-        public VotingData(StatefulServiceContext context)
+        private readonly ILogger logger;
+
+        public VotingData(StatefulServiceContext context, ILogger logger)
             : base(context)
-        { }
+        {
+            this.logger = logger;
+        }
 
         /// <summary>
         /// Optional override to create listeners (like tcp, http) for this service instance.
@@ -39,8 +44,8 @@ namespace VotingData
                                         .UseKestrel()
                                         .ConfigureServices(
                                             services => services
-                                                .AddSingleton<StatefulServiceContext>(serviceContext)
-                                                .AddSingleton<IReliableStateManager>(this.StateManager))
+                                                .AddSingleton(serviceContext)
+                                                .AddSingleton(this.StateManager))
                                         .UseContentRoot(Directory.GetCurrentDirectory())
                                         .UseStartup<Startup>()
                                         .UseServiceFabricIntegration(listener, ServiceFabricIntegrationOptions.UseUniqueServiceUrl)
